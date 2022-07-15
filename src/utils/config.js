@@ -1,5 +1,13 @@
-export const api = "http://localhost:5000/api";
-export const uploads = "http://localhost:5000/uploads";
+import axios from "axios";
+const apiUrl = process.env.REACT_APP_API_URL
+
+
+export const api = apiUrl
+
+
+
+// export const api = process.env.REACT_APP_API_URL //process.env.REACT_APP_API_UPLOADS
+export const uploads = process.env.REACT_APP_API_UPLOADS
 
 export const requestConfig = (method, data, token = null, image = null) => {
   let config;
