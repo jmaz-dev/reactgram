@@ -1,18 +1,18 @@
-import "./App.css";
+import './App.css';
 // Router
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 // Hooks
-import { useAuth } from "./hooks/useAuth";
+import { useAuth } from './hooks/useAuth';
 
 // Pages
-import Home from "./pages/Home";
-import Login from "./pages/Auth/Login";
-import Register from "./pages/Auth/Register";
-import EditProfile from "./pages/EditProfile";
-import Profile from "./pages/Profile";
-import Photo from "./pages/Photo";
-import Search from "./pages/Search";
+import Home from './pages/Home';
+import Login from './pages/Auth/Login';
+import Register from './pages/Auth/Register';
+import EditProfile from './pages/EditProfile';
+import Profile from './pages/Profile';
+import Photo from './pages/Photo';
+import Search from './pages/Search';
 
 function App() {
   const { auth, loading } = useAuth();
